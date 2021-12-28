@@ -1,0 +1,36 @@
+{
+  "name": "uni",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^1.4.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^6.0.2",
+    "express-mysql-session": "^2.1.7",
+    "express-session": "^1.17.2",
+    "jalali-moment": "^3.3.10",
+    "mysql2": "^2.3.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/motalotfi/uni_todo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/motalotfi/uni_todo/issues"
+  },
+  "homepage": "https://github.com/motalotfi/uni_todo#readme",
+  "description": ""
+}

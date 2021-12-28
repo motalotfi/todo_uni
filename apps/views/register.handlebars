@@ -1,0 +1,51 @@
+<div class="heading-bx left">
+  <h2 class="title-head"> همین حالا <span> عضو شوید</span></h2>
+  <p> ورود <a href="/auth/login"> کلیک کنید </a></p>
+</div>
+<form class="contact-bx" method="post" action="/auth/register">
+  <div class="row placeani">
+    <div class="col-lg-12">
+      <div class="form-group">
+        <div class="input-group">
+          <label> نام و نام خانوادگی</label>
+          <input
+            name="full_name"
+            type="text"
+            required=""
+            class="form-control"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="form-group">
+        <div class="input-group">
+          <label>پست‌الکترونیک</label>
+          <input name="email" type="email" required="" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="form-group">
+        <div class="input-group">
+          <label>رمزعبور</label>
+          <input
+            name="password"
+            type="password"
+            class="form-control"
+            required=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12 m-b30">
+      <button
+        name="submit"
+        type="submit"
+        value="Submit"
+        class="btn button-md"
+      >عضویت</button>
+    </div>
+
+  </div>
+</form>

@@ -1,0 +1,121 @@
+<main class="ttr-wrapper">
+  <div class="container-fluid">
+{{!-- با سلام این بخش برای امار بالای سایت است --}}
+    <div class="row">
+      <div class="col-md-6 col-lg-3 col-xl-3 col-sm-6 col-12">
+        <div class="widget-card widget-bg1">
+          <div class="wc-item">
+            <h4 class="wc-title">
+             امروز
+            </h4>
+
+            <span class="wc-stats">
+              {{now}}
+            </span>
+            <div class="progress wc-progress"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 col-xl-3 col-sm-6 col-12">
+        <div class="widget-card widget-bg2">
+          <div class="wc-item">
+            <h4 class="wc-title">
+              کار های مهم
+            </h4>
+
+            <span class="wc-stats">
+              <span class="counter">{{ImportNum}} </span>
+            </span>
+            <div class="progress wc-progress"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 col-xl-3 col-sm-6 col-12">
+        <div class="widget-card widget-bg3">
+          <div class="wc-item">
+            <h4 class="wc-title">
+              در دست انجام
+            </h4>
+
+            <span class="wc-stats counter">
+              {{allNum}}
+            </span>
+            <div class="progress wc-progress"></div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 col-xl-3 col-sm-6 col-12">
+        <div class="widget-card widget-bg4">
+          <div class="wc-item">
+            <h4 class="wc-title">
+              انجام شده
+            </h4>
+            
+            <span class="wc-stats counter">
+              {{doneNum}}
+            </span>
+            <div class="progress wc-progress"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    {{!-- با سلام این بخش برای امار بالای سایت است --}}
+    
+
+{{!-- این بخش مربوط به جدول کار های مهم است --}}
+
+    <div class="col-12">
+<div >
+        <div class="widget-box">
+          <div class="wc-title">
+            <h4 class="text-center">کار های مهم</h4>
+          </div>
+          <div class="widget-inner">
+            <div class="noti-box-list">
+              <div class="lesson-table   m-t10" style="overflow-x: scroll;">
+        <table class="table table-hover table-bordered text-center table-responsive-sm">
+  <thead>
+   
+    <tr>
+      
+      <th scope="col">عنوان</th>
+      <th scope="col">وضعیت</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+     {{#each tasks}}
+   
+      <td>{{this.title}}</td>
+      <td>
+        
+        <div>
+        <a href="/done/{{this.id}}"><button class="btn">انجام شده</button></a>
+        <a href="/delete/{{this.id}}"><button class="btn">حذف</button></a>
+      
+      </div>
+      </td>
+     
+      
+      
+    </tr>
+    {{/each}}
+     
+  </tbody>
+</table>
+       
+      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+      
+    </div>
+{{!-- این بخش مربوط به جدول کار های مهم است --}}
+
+  </div>
+</main>
